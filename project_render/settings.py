@@ -83,9 +83,8 @@ WSGI_APPLICATION = 'project_render.wsgi.application'
   #  }
 #}
 DATABASES = {
-    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   'default': dj_database_url.parse("postgresql://kurta_store_user:COZhWYBusJLXkd2Zsa8MMAkurCiLzABc@dpg-cr8nffi3esus73b9fprg-a.oregon-postgres.render.com/kurta_store")
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
